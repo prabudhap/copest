@@ -1,0 +1,12 @@
+# Force Termux to look in your custom folder for the dynamic libs
+export LD_LIBRARY_PATH=$PREFIX/lib/ollama:$LD_LIBRARY_PATH
+
+# Enforce thread execution boundaries
+export OLLAMA_NUM_PARALLEL=1
+export OLLAMA_THREADS=4
+
+# Launch the daemon
+ollama serve &
+
+# Run the 3B model with your memory optimization flag
+ollama run qwen2.5:3b -p num_ctx=2048
