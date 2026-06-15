@@ -20,13 +20,14 @@ A lightweight, collaborative, real-time scratchpad server built in Python using 
 
 ### Step-by-Step Setup
 
-1. **Clone or Navigate to the Directory:**
+1. **Clone the repository:**
    ```bash
-   cd "d:/vibhu/some stuff/vib/projects/copest"
+   git clone https://github.com/prabudhap/copest.git
+   cd copest
    ```
 
 2. **Create and Activate a Virtual Environment (Optional but Recommended):**
-   - **On Windows (PowerShell):**
+   - **On Windows:**
      ```powershell
      python -m venv .venv
      .venv\Scripts\Activate.ps1
@@ -38,7 +39,7 @@ A lightweight, collaborative, real-time scratchpad server built in Python using 
      ```
 
 3. **Install Dependencies:**
-   Install the required packages using the generated `requirements.txt`:
+   Install the required packages using `requirements.txt`:
    ```bash
    pip install -r requirements.txt
    ```
@@ -67,7 +68,7 @@ Upon launching, the Flask app will run on port `5000` and bind to all network in
 
 ---
 
-## 🗂️ File Directory structure
-- [copest.py](file:///d:/vibhu/some%20stuff/vib/projects/copest/copest.py) - Main application file (backend and frontend UI template).
-- [requirements.txt](file:///d:/vibhu/some%20stuff/vib/projects/copest/requirements.txt) - List of dependency libraries.
-- [shared_document.txt](file:///d:/vibhu/some%20stuff/vib/projects/copest/shared_document.txt) - The file where the shared text content is persisted.
+## 🗂️ File Directory Structure
+- [copest.py](copest.py) - Main application file (backend and frontend UI template).
+- [requirements.txt](requirements.txt) - List of dependency libraries.
+- [shared_document.txt](shared_document.txt) - The file where the shared text content is persisted.
